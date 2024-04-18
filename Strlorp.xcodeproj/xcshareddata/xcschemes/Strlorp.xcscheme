@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6E84A14B28D0F96D00BF7495"
-               BuildableName = "AKInterface.bundle"
-               BlueprintName = "AKInterface"
+               BuildableName = "Noiaaree.bundle"
+               BlueprintName = "Noiaaree"
                ReferencedContainer = "container:Strlorp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

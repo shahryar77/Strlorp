@@ -21,7 +21,7 @@ class PlayInput {
         centre.addObserver(forName: NSNotification.Name(rawValue: "NSWindowDidBecomeKeyNotification"), object: nil,
             queue: main) { _ in
             if mode.cursorHidden() {
-                AKInterface.shared!.warpCursor()
+                Noiaaree.shared!.warpCursor()
             }
         }
 

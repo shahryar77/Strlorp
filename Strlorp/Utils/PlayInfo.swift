@@ -7,7 +7,7 @@ import Foundation
 
 class PlayInfo {
     static var isLauncherInstalled: Bool {
-        return AKInterface.shared!
+        return Noiaaree.shared!
             .urlForApplicationWithBundleIdentifier("io.playcover.PlayCover") != nil
     }
 }

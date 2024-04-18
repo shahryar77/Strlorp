@@ -61,29 +61,29 @@ public class ControlMode: Equatable {
             }
         }
 
-        AKInterface.shared!.setupKeyboard(keyboard: { keycode, pressed, isRepeat in
+        Noiaaree.shared!.setupKeyboard(keyboard: { keycode, pressed, isRepeat in
             self.keyboardAdapter.handleKey(keycode: keycode, pressed: pressed, isRepeat: isRepeat)},
           swapMode: ModeAutomaton.onOption)
 
         if PlaySettings.shared.enableScrollWheel {
-            AKInterface.shared!.setupScrollWheel({deltaX, deltaY in
+            Noiaaree.shared!.setupScrollWheel({deltaX, deltaY in
                 self.mouseAdapter.handleScrollWheel(deltaX: deltaX, deltaY: deltaY)
             })
         }
 
-        AKInterface.shared!.setupMouseMoved({deltaX, deltaY in
+        Noiaaree.shared!.setupMouseMoved({deltaX, deltaY in
             self.mouseAdapter.handleMove(deltaX: deltaX, deltaY: deltaY)
         })
 
-        AKInterface.shared!.setupMouseButton(left: true, right: false, {_, pressed in
+        Noiaaree.shared!.setupMouseButton(left: true, right: false, {_, pressed in
             self.mouseAdapter.handleLeftButton(pressed: pressed)
         })
 
-        AKInterface.shared!.setupMouseButton(left: false, right: false, {id, pressed in
+        Noiaaree.shared!.setupMouseButton(left: false, right: false, {id, pressed in
             self.mouseAdapter.handleOtherButton(id: id, pressed: pressed)
         })
 
-        AKInterface.shared!.setupMouseButton(left: false, right: true, {id, pressed in
+        Noiaaree.shared!.setupMouseButton(left: false, right: true, {id, pressed in
             self.mouseAdapter.handleOtherButton(id: id, pressed: pressed)
         })
 
@@ -113,11 +113,11 @@ public class ControlMode: Equatable {
                     ActionDispatcher.invalidateActions()
                 }
 
-                AKInterface.shared!.unhideCursor()
+                Noiaaree.shared!.unhideCursor()
             } else {
                 NotificationCenter.default.post(name: NSNotification.Name.playtoolsCursorWillHide,
                                                 object: nil, userInfo: [:])
-                AKInterface.shared!.hideCursor()
+                Noiaaree.shared!.hideCursor()
                 if screen.fullscreen {
                     screen.switchDock(false)
                 }

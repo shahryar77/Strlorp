@@ -13,7 +13,7 @@ public class PlayCover: NSObject {
 
     @objc static public func launch() {
         quitWhenClose()
-        AKInterface.initialize()
+        Noiaaree.initialize()
         PlayInput.shared.initialize()
         DiscordIPC.shared.initialize()
 
@@ -62,7 +62,7 @@ public class PlayCover: NSObject {
                 UIApplication.shared.delegate?.applicationWillTerminate?(UIApplication.shared)
                 NotificationCenter.default.post(name: UIApplication.willTerminateNotification,
                                                 object: UIApplication.shared)
-                DispatchQueue.main.async(execute: AKInterface.shared!.terminateApplication)
+                DispatchQueue.main.async(execute: Noiaaree.shared!.terminateApplication)
 
                 // Step 3.5: End BGTask
                 // BGTask typically runs in another process and is tricky to terminate.

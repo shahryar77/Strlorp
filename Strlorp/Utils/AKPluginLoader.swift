@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AKInterface {
+class Noiaaree {
     public static var shared: Plugin?
 
     public static func initialize() {
@@ -17,7 +17,7 @@ class AKInterface {
     private static func loadPlugin() -> Plugin? {
         // 1. Form the plugin's bundle URL
         guard let bundleURL = Bundle.main.builtInPlugInsURL?
-                                    .appendingPathComponent("AKInterface")
+                                    .appendingPathComponent("Noiaaree")
                                     .appendingPathExtension("bundle") else { return nil }
 
         // 2. Create a bundle instance with the plugin URL

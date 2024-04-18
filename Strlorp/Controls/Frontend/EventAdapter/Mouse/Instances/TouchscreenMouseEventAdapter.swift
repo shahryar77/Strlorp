@@ -13,8 +13,8 @@ public class TouchscreenMouseEventAdapter: MouseEventAdapter {
 
     static public func cursorPos() -> CGPoint? {
         // IMPROVE: this is expensive (maybe?)
-        var point = AKInterface.shared!.mousePoint
-        let rect = AKInterface.shared!.windowFrame
+        var point = Noiaaree.shared!.mousePoint
+        let rect = Noiaaree.shared!.windowFrame
         if rect.width < 1 || rect.height < 1 {
             return nil
         }

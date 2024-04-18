@@ -13,7 +13,7 @@
 		6E7663A128D0FB5300DE4AF9 /* AKPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7663A028D0FB5300DE4AF9 /* AKPlugin.swift */; };
 		6E7663A528D0FEBE00DE4AF9 /* AKPluginLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7663A428D0FEBE00DE4AF9 /* AKPluginLoader.swift */; };
 		6E84A14528D0F94E00BF7495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA818CBA287ABFD5000BEE9D /* UIKit.framework */; };
-		6E84A15028D0F97500BF7495 /* AKInterface.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A14C28D0F96D00BF7495 /* AKInterface.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E84A15028D0F97500BF7495 /* Noiaaree.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E84A14C28D0F96D00BF7495 /* Noiaaree.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		951D8275299D097C00D35B20 /* Playtools.strings in Resources */ = {isa = PBXBuildFile; fileRef = 951D8277299D097C00D35B20 /* Playtools.strings */; };
 		9562D1512AB484C7002C329D /* EventAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562D1502AB484C7002C329D /* EventAdapters.swift */; };
 		9562D1532AB484FD002C329D /* EventAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562D1522AB484FD002C329D /* EventAdapter.swift */; };
@@ -78,7 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6E84A15028D0F97500BF7495 /* AKInterface.bundle in Embed Frameworks */,
+				6E84A15028D0F97500BF7495 /* Noiaaree.bundle in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,11 +87,11 @@
 
 /* Begin PBXFileReference section */
 		2847AE47298EFC0F00B0F983 /* PlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
-		6E76639628D0FA6200DE4AF9 /* AKInterface-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKInterface-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E76639628D0FA6200DE4AF9 /* Noiaaree-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Noiaaree-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E76639A28D0FAE700DE4AF9 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
 		6E7663A028D0FB5300DE4AF9 /* AKPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKPlugin.swift; sourceTree = "<group>"; };
 		6E7663A428D0FEBE00DE4AF9 /* AKPluginLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKPluginLoader.swift; sourceTree = "<group>"; };
-		6E84A14C28D0F96D00BF7495 /* AKInterface.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKInterface.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E84A14C28D0F96D00BF7495 /* Noiaaree.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Noiaaree.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		951D8276299D097C00D35B20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Playtools.strings; sourceTree = "<group>"; };
 		951D8278299D098000D35B20 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Playtools.strings"; sourceTree = "<group>"; };
 		9562D1502AB484C7002C329D /* EventAdapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdapters.swift; sourceTree = "<group>"; };
@@ -174,14 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E76639928D0FA6F00DE4AF9 /* AKInterface */ = {
+		6E76639928D0FA6F00DE4AF9 /* Noiaaree */ = {
 			isa = PBXGroup;
 			children = (
 				6E76639A28D0FAE700DE4AF9 /* Plugin.swift */,
 				6E7663A028D0FB5300DE4AF9 /* AKPlugin.swift */,
-				6E76639628D0FA6200DE4AF9 /* AKInterface-Bridging-Header.h */,
+				6E76639628D0FA6200DE4AF9 /* Noiaaree-Bridging-Header.h */,
 			);
-			name = AKInterface;
+			name = Noiaaree;
 			sourceTree = "<group>";
 		};
 		9562D14F2AB4849C002C329D /* EventAdapter */ = {
@@ -286,7 +286,7 @@
 			children = (
 				951D8277299D097C00D35B20 /* Playtools.strings */,
 				AA7196DA287A447700623C15 /* Strlorp */,
-				6E76639928D0FA6F00DE4AF9 /* AKInterface */,
+				6E76639928D0FA6F00DE4AF9 /* Noiaaree */,
 				AA7196D9287A447700623C15 /* Products */,
 				AA818CB7287ABFB1000BEE9D /* Frameworks */,
 			);
@@ -296,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7196D8287A447700623C15 /* Strlorp.framework */,
-				6E84A14C28D0F96D00BF7495 /* AKInterface.bundle */,
+				6E84A14C28D0F96D00BF7495 /* Noiaaree.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,9 +442,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6E84A14B28D0F96D00BF7495 /* AKInterface */ = {
+		6E84A14B28D0F96D00BF7495 /* Noiaaree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E84A14D28D0F96D00BF7495 /* Build configuration list for PBXNativeTarget "AKInterface" */;
+			buildConfigurationList = 6E84A14D28D0F96D00BF7495 /* Build configuration list for PBXNativeTarget "Noiaaree" */;
 			buildPhases = (
 				6E84A14828D0F96D00BF7495 /* Sources */,
 				6E84A14928D0F96D00BF7495 /* Frameworks */,
@@ -454,9 +454,9 @@
 			);
 			dependencies = (
 			);
-			name = AKInterface;
-			productName = AKInterface;
-			productReference = 6E84A14C28D0F96D00BF7495 /* AKInterface.bundle */;
+			name = Noiaaree;
+			productName = Noiaaree;
+			productReference = 6E84A14C28D0F96D00BF7495 /* Noiaaree.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		AA7196D7287A447700623C15 /* Strlorp */ = {
@@ -519,7 +519,7 @@
 			projectRoot = "";
 			targets = (
 				AA7196D7287A447700623C15 /* Strlorp */,
-				6E84A14B28D0F96D00BF7495 /* AKInterface */,
+				6E84A14B28D0F96D00BF7495 /* Noiaaree */,
 			);
 		};
 /* End PBXProject section */
@@ -663,12 +663,12 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.playcover.AKInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.playcover.Noiaaree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AKInterface-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Noiaaree-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
@@ -695,12 +695,12 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.playcover.AKInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = io.playcover.Noiaaree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AKInterface-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Noiaaree-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -921,7 +921,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E84A14D28D0F96D00BF7495 /* Build configuration list for PBXNativeTarget "AKInterface" */ = {
+		6E84A14D28D0F96D00BF7495 /* Build configuration list for PBXNativeTarget "Noiaaree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E84A14E28D0F96D00BF7495 /* Debug */,

@@ -65,19 +65,19 @@ extension CGRect {
 
 extension UIScreen {
     static var aspectRatio: CGFloat {
-        let count = AKInterface.shared!.screenCount
+        let count = Noiaaree.shared!.screenCount
         if PlaySettings.shared.notch {
             if count == 1 {
                 return mainScreenWidth / mainScreenHeight // 1.6 or 1.77777778
             } else {
-                if AKInterface.shared!.isMainScreenEqualToFirst {
+                if Noiaaree.shared!.isMainScreenEqualToFirst {
                     return mainScreenWidth / mainScreenHeight
                 }
             }
 
         }
 
-        let frame = AKInterface.shared!.mainScreenFrame
+        let frame = Noiaaree.shared!.mainScreenFrame
         return frame.aspectRatio()
     }
 }
@@ -110,7 +110,7 @@ public class PlayScreen: NSObject {
     }
 
     var fullscreen: Bool {
-        return AKInterface.shared!.isFullscreen
+        return Noiaaree.shared!.isFullscreen
     }
 
     @objc public var screenRect: CGRect {
@@ -158,7 +158,7 @@ public class PlayScreen: NSObject {
     }
 
     func switchDock(_ visible: Bool) {
-        AKInterface.shared!.setMenuBarVisible(visible)
+        Noiaaree.shared!.setMenuBarVisible(visible)
     }
 
     // Default calculation

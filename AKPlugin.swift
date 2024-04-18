@@ -1,6 +1,6 @@
 //
 //  MacPlugin.swift
-//  AKInterface
+//  Noiaaree
 //
 //  Created by Isaac Marovitz on 13/09/2022.
 //

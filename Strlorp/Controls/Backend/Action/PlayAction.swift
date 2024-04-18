@@ -65,13 +65,13 @@ class DraggableButtonAction: ButtonAction {
                                       handler: self.onMouseMoved,
                                       priority: .DRAGGABLE)
             if !mode.cursorHidden() {
-                AKInterface.shared!.hideCursor()
+                Noiaaree.shared!.hideCursor()
             }
         } else {
             ActionDispatcher.unregister(key: KeyCodeNames.mouseMove)
             Toucher.touchcam(point: releasePoint, phase: UITouch.Phase.ended, tid: &id)
             if !mode.cursorHidden() {
-                AKInterface.shared!.unhideCursor()
+                Noiaaree.shared!.unhideCursor()
             }
         }
     }
