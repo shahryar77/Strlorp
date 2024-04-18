@@ -1,3 +1,3 @@
-# PlayTools
+# Strlorp
 
-PlayTools from PlayCover
+Strlorp from PlayCover

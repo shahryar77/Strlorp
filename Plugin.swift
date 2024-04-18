@@ -1,6 +1,6 @@
 //
 //  Plugin.swift
-//  PlayTools
+//  Strlorp
 //
 //  Created by Isaac Marovitz on 13/09/2022.
 //
